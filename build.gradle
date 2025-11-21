@@ -86,7 +86,15 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    // Put repositories for dependencies here
+    // Maven for delaunay-triangulator
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+// necessary for inclusion in build
+configurations {
+    externalLibs
 }
 
 dependencies {
@@ -99,6 +107,9 @@ dependencies {
 
     // Mixin
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    externalLibs group: 'com.github.jdiemke.delaunay-triangulator', name: 'DelaunayTriangulator', version: '1.0.0'
+    configurations.compileOnly.extendsFrom(configurations.externalLibs)
 }
 
 mixin {
