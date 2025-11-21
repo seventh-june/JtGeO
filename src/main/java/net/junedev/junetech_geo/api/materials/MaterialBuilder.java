@@ -1,4 +1,4 @@
-package net.junedev.junetech_geo.api.materials;
+/* package net.junedev.junetech_geo.api.materials;
 
 public class MaterialBuilder {
     private final int materialID;
@@ -100,3 +100,4 @@ public class MaterialBuilder {
         return this;
     }
 }
+ */
