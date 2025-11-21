@@ -5,12 +5,9 @@ import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.data.ForgeBlockTagsProvider;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -99,10 +96,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.BRECCIA_DALLASITE.get(),
                         Blocks.SANDSTONE,
                         Blocks.RED_SANDSTONE,
-                        ModBlocks.SANDSTONE_QUARTZ_ARENITE.get(),
+                        // ModBlocks.SANDSTONE_QUARTZ_ARENITE.get(),
                         ModBlocks.SANDSTONE_FELDSPATHIC_ARENITE.get(),
                         ModBlocks.SANDSTONE_GREYWACKE.get(),
-                        ModBlocks.SANDSTONE_ARKOSE.get(),
+                        // ModBlocks.SANDSTONE_ARKOSE.get(),
                         ModBlocks.SANDSTONE_ITACOLUMNITE.get(),
                         ModBlocks.SANDSTONE_GANISTER.get(),
                         ModBlocks.SANDSTONE_GANISTER_ROOT_TRACED.get(),

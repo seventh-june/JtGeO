@@ -4,6 +4,7 @@ public class Radioisotopes {
     public Radioisotopes(String baseElement, int atomicWeight, int decayType, double halfLife, String decayProduct) {
     } //half-life is in years
 
+        /*
     private static void loadRadioisotopes() {
         Radioisotopes.Tritium = loadTritium;
         Radioisotopes.Carbon14 = loadCarbon14;
@@ -133,5 +134,7 @@ public class Radioisotopes {
                 "Uranium", 238, 1, 0, "Thorium234"
         );
     }
+
+         */
 
 }

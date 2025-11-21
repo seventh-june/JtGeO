@@ -1561,7 +1561,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> QUARTZ_KSPAR_SANDY_CONGLOMERATE = registerBlock("quartz_kspar_sandy_conglomerate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
-    public static final RegistryObject<Block> QUARTZ_LITHIC_FELDSPATHIC_CONGLOMERATE = registerBlock("quartz_kspar_feldspathic_conglomerate",
+    public static final RegistryObject<Block> QUARTZ_LITHIC_FELDSPATHIC_CONGLOMERATE = registerBlock("quartz_lithic_feldspathic_conglomerate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> QUARTZ_LITHIC_MUDDY_CONGLOMERATE = registerBlock("quartz_lithic_muddy_conglomerate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
