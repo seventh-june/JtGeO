@@ -3,6 +3,10 @@ package net.junedev.junetech_geo.worldgen.noise;
 import io.github.jdiemke.triangulation.DelaunayTriangulator;
 import io.github.jdiemke.triangulation.NotEnoughPointsException;
 import io.github.jdiemke.triangulation.Vector2D;
+import net.minecraft.core.BlockPos;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.levelgen.WorldgenRandom;
 import net.minecraft.world.phys.Vec2;
 
 import java.util.ArrayList;
@@ -10,18 +14,33 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-// TODO
+// TODO - finish this up. maybe gut FastNoiseLite and transfer its copyright notice here
 /**
- * Instances represent a Voronoi diagram constructed from a set of 2D vectors representing seeds. This is accomplished
- * using a Delaunay triangulation, as the former is the dual graph of the latter & vice versa and this property lets
- * us describe edges more flexibly.
+ * Instances represents Worley noise constructed from a set of 2D vectors representing seeds. This is accomplished
+ * using a Delaunay triangulation, as the former is the dual graph of the underlying Voronoi diagram & vice versa.
  * @author kawaiicakes
  */
-public class VoronoiGraph {
+public class Voronoise {
     protected final DelaunayTriangulator delaunay;
+
+    // TODO - this needs a rework for better distribution
+    public static Vec2 applyJitter(MinecraftServer server, BlockPos pos) {
+        final RandomSource random = new WorldgenRandom(RandomSource.create(
+                server.getWorldData().worldGenOptions().seed() + BlockPos.asLong(pos.getX(), 0, pos.getZ())
+        ));
+
+        return new Vec2(
+                random.nextIntBetweenInclusive(0, 15) + pos.getX(),
+                random.nextIntBetweenInclusive(0, 15) + pos.getZ()
+        );
+    }
+
+    // TODO - enhanced Perlin will use a Voronoi graph to determine tectonic plate boundaries
 
     // TODO - figure out whether to enforce a passing order in the constructor or leave it to the caller
     //  Double-check that the order even matters...
+
+    // meat of things in NoiseBasedChunkGenerator#doFill
     /**
      * Deterministically constructs a new Voronoi diagram from the passed {@code seeds}.
      * @param seeds the {@link Vec2}s representing the seeds. You must pass at least 3 and not include duplicates.
@@ -29,7 +48,7 @@ public class VoronoiGraph {
      * @throws IllegalArgumentException if a passed arg is identical to a previous one.
      * @throws NotEnoughPointsException if less than 3 points are passed.
      */
-    public VoronoiGraph(Vec2... seeds) throws IllegalArgumentException, NotEnoughPointsException {
+    public Voronoise(Vec2... seeds) throws IllegalArgumentException, NotEnoughPointsException {
         if (seeds.length < 3) throw new NotEnoughPointsException();
 
         List<Vector2D> orderedSeeds = new ArrayList<>();
