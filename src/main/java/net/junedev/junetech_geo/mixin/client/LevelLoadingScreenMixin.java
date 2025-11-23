@@ -16,9 +16,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 */
 @Mixin(LevelLoadingScreen.class)
 public class LevelLoadingScreenMixin {
+
+    /*
+     * disabled
     @Inject(method = "lambda$static$0", at = @At(value = "HEAD"))
     private static void addStoneReplacer(Object2IntOpenHashMap<ChunkStatus> chunkStatus, CallbackInfo ci) {
         LogUtils.getLogger().info("Hello from the Mixin!"); // remove this at some point, here for debug purposes
-        chunkStatus.put(JtGeOChunkStatus.STONE_REPLACER, 0x127b81);
+        //chunkStatus.put(JtGeOChunkStatus.STONE_REPLACER, 0x127b81);
     }
+    */
+
 }

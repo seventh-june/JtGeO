@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.item.ModCreativeModeTabs;
 import net.junedev.junetech_geo.item.ModItems;
+import net.junedev.junetech_geo.worldgen.JTGConfiguredFeatures;
+import net.junedev.junetech_geo.worldgen.JTGFeatures;
 import net.junedev.junetech_geo.worldgen.chunk.JtGeOChunkStatus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -21,9 +23,10 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(JunetechGeo.MOD_ID)
 public class JunetechGeo {
+
+    //todo jtg or geo writes faster in-game as ID
     public static final String MOD_ID = "junetech_geo";
     public static final Logger LOGGER = LogUtils.getLogger();
-
     public static ResourceLocation id(String path) {
         return new ResourceLocation(MOD_ID, path);
     }
@@ -35,15 +38,17 @@ public class JunetechGeo {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        JtGeOChunkStatus.register(modEventBus);
+        //JtGeOChunkStatus.register(modEventBus);
+        //Features
+        JTGFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        LOGGER.info("Hello from server");
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -72,7 +77,7 @@ public class JunetechGeo {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            LOGGER.info("Hello from client");
         }
     }
 }
