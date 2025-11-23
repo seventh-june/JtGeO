@@ -11,8 +11,7 @@
     "PerlinNoiseMixin"
   ],
   "client": [
-    "client.CreativeModeInventoryScreenMixin",
-    "client.LevelLoadingScreenMixin"
+    "client.CreativeModeInventoryScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

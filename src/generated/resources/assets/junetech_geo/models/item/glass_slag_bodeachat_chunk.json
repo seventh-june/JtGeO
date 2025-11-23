@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "junetech_geo:item/glass_slag_bodeachat_chunk"
-  }
-}

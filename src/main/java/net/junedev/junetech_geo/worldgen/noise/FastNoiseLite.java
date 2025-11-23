@@ -333,6 +333,12 @@ public class FastNoiseLite {
         }
     }
 
+    //Usefull output
+    public float getValue(float x, float y){
+        float v = (GetNoise(x, y)+1)/2f;
+        return Math.max(Math.min(v, 1f), 0f);
+    }
+
     /// <summary>
     /// 3D noise at given position using current settings
     /// </summary>
@@ -616,7 +622,7 @@ public class FastNoiseLite {
     private static final int PrimeY = 1136930381;
     private static final int PrimeZ = 1720413743;
 
-    private static int Hash(int seed, int xPrimed, int yPrimed)
+    public static int Hash(int seed, int xPrimed, int yPrimed)
     {
         int hash = seed ^ xPrimed ^ yPrimed;
 

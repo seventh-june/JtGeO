@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "junetech_geo:item/volcanic_ash_pile"
-  }
-}
