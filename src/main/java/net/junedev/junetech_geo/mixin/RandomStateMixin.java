@@ -26,6 +26,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 
 import java.lang.reflect.Field;
+import java.util.Objects;
 
 import static net.junedev.junetech_geo.JunetechGeo.MOD_ID;
 
@@ -45,7 +46,6 @@ public abstract class RandomStateMixin implements RandomStateAccessor {
     @Override
     @Nullable
     public HolderGetter<NoiseAlgorithm> jtGeO$getNoiseAlgorithm() {
-        // FIXME - seems to always return null
         // Maybe even make this throw
         if (this.jtGeO$algorithm == null) jtGeO$LOGGER.error("Attempted to access null NoiseAlgorithm!");
         return this.jtGeO$algorithm;
@@ -98,7 +98,7 @@ public abstract class RandomStateMixin implements RandomStateAccessor {
     @SuppressWarnings("UnresolvedMixinReference")
     @Mixin(targets = "net/minecraft/world/level/levelgen/RandomState$1NoiseWiringHelper")
     public abstract static class NoiseWiringHelperMixin {
-        @SuppressWarnings({"LocalMayBeArgsOnly", "RedundantCast"}) // It can't, I don't know why it's telling me it can
+        @SuppressWarnings({"LocalMayBeArgsOnly"}) // It can't, I don't know why it's telling me it can
         @WrapOperation(
                 method = "visitNoise(Lnet/minecraft/world/level/levelgen/DensityFunction$NoiseHolder;)Lnet/minecraft/world/level/levelgen/DensityFunction$NoiseHolder;",
                 at = @At(
@@ -113,27 +113,20 @@ public abstract class RandomStateMixin implements RandomStateAccessor {
             NormalNoise originalReturn = original.call(random, parameters); // preserve chained code
 
             try {
-                Field field = ((Object) this).getClass().getDeclaredField("this$0");
-                RandomState container = ((RandomState) field.get((Object) this));
-                //noinspection DataFlowIssue
-                HolderGetter<NoiseAlgorithm> noiseHolder
-                        = ((RandomStateAccessor) (Object) container).jtGeO$getNoiseAlgorithm();
+                Field field = this.getClass().getDeclaredField("this$0");
+                RandomState container = ((RandomState) field.get(this));
 
                 if (holder.get().is(Noises.TEMPERATURE)) {
                     LogUtils.getLogger().info("Enhanced made for Temperature");
                     return EnhancedNormalNoise.createLegacyNetherBiome(
-                            noiseHolder.getOrThrow(
-                                    NoiseAlgorithm.makeKey(new ResourceLocation(MOD_ID, Noises.TEMPERATURE.location().getPath()))
-                            ).get(),
+                            () -> Objects.requireNonNull(((RandomStateAccessor) (Object) container).jtGeO$getNoiseAlgorithm()).getOrThrow(NoiseAlgorithm.makeKey(new ResourceLocation(MOD_ID, Noises.TEMPERATURE.location().getPath()))).get(),
                             random,
                             parameters
                     );
                 } else if (holder.get().is(Noises.VEGETATION)) {
                     LogUtils.getLogger().info("Enhanced made for Vegetation");
                     return EnhancedNormalNoise.createLegacyNetherBiome(
-                            noiseHolder.getOrThrow(
-                                    NoiseAlgorithm.makeKey(new ResourceLocation(MOD_ID, Noises.VEGETATION.location().getPath()))
-                            ).get(),
+                            () -> Objects.requireNonNull(((RandomStateAccessor) (Object) container).jtGeO$getNoiseAlgorithm()).getOrThrow(NoiseAlgorithm.makeKey(new ResourceLocation(MOD_ID, Noises.VEGETATION.location().getPath()))).get(),
                             random,
                             parameters
                     );

@@ -35,7 +35,8 @@ public abstract class ChunkMapMixin {
             ) {
         // allow chained code to execute still in case something else is mixing in here
         // 0 is passed as seed to bypass the logging
-        original.call(settings, noiseParametersGetter, 0L);
+        // original.call(settings, noiseParametersGetter, 0L);
+        // can't chain? leads to null issues?
         return RandomStateAccessor.create(settings, access.get().asGetterLookup(), levelSeed);
     }
 }
