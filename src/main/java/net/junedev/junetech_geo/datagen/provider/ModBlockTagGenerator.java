@@ -103,7 +103,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SANDSTONE_FELDSPATHIC_ARENITE.get(),
                         ModBlocks.SANDSTONE_GREYWACKE.get(),
                         ModBlocks.SANDSTONE_ARKOSE.get(),
-                        ModBlocks.SANDSTONE_ITACOLUMNITE.get(),
+                        ModBlocks.SANDSTONE_ITACOLUMITE.get(),
                         ModBlocks.SANDSTONE_GANISTER.get(),
                         ModBlocks.SANDSTONE_GANISTER_ROOT_TRACED.get(),
                         ModBlocks.SANDSTONE_TURBIDITE.get(),
