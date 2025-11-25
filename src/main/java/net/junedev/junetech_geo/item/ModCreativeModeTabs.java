@@ -1303,7 +1303,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BERYL_CRYSTAL.get());
                         pOutput.accept(ModItems.BIXBYITE_CRYSTAL.get());
                         pOutput.accept(ModItems.BERYLLIUM_NATIVE.get());
-                        pOutput.accept(ModItems.BERZEILITE_CRYSTAL.get());
+                        pOutput.accept(ModItems.BERZELIITE_CRYSTAL.get());
                         pOutput.accept(ModItems.BETAFITE_CRYSTAL.get());
                         pOutput.accept(ModItems.BIOTITE_SHEET.get());
                         pOutput.accept(ModItems.BISCHOFITE_CHUNK.get());
@@ -1367,7 +1367,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CHLORITOID_CRYSTAL.get());
                         pOutput.accept(ModItems.CHLOROMELANITE_CHUNK.get());
                         pOutput.accept(ModItems.CHONDRODITE_CRYSTAL.get());
-                        pOutput.accept(ModItems.CHROMFERRIDE_NANOCRYSTAL.get());
+                        pOutput.accept(ModItems.CHROMFERIDE_NANOCRYSTAL.get());
                         pOutput.accept(ModItems.CHROMITE_CRYSTAL.get());
                         pOutput.accept(ModItems.CHRYSOBERYL_CRYSTAL.get());
                         pOutput.accept(ModItems.CHRYSOCOLLA_BLUE_CLUMP.get());
@@ -1575,7 +1575,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.KERNITE_SHARD.get());
                         pOutput.accept(ModItems.KESTERITE_CRYSTAL.get());
                         pOutput.accept(ModItems.KORNERUPINE_CHUNK.get());
-                        pOutput.accept(ModItems.KOSMOCLOR_SHEET.get());
+                        pOutput.accept(ModItems.KOSMOCHLOR_SHEET.get());
                         pOutput.accept(ModItems.KUTNOHORITE_FIBERS.get());
                         pOutput.accept(ModItems.KYANITE_CRYSTAL.get());
                         pOutput.accept(ModItems.LABRADORITE_CRYSTAL.get());
@@ -1646,7 +1646,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.MINIUM_CHUNK.get());
                         pOutput.accept(ModItems.MINRECORDITE_CLUMP.get());
                         pOutput.accept(ModItems.MIRABILITE_CRYSTALS.get());
-                        pOutput.accept(ModItems.MITRIDALITE_CHUNK.get());
+                        pOutput.accept(ModItems.MITRIDATITE_CHUNK.get());
                         pOutput.accept(ModItems.MOGANITE_CHUNK.get());
                         pOutput.accept(ModItems.MOHAWKITE_CHUNK.get());
                         pOutput.accept(ModItems.MOISSANITE_CRYSTAL.get());
@@ -1666,7 +1666,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.MUSCOVITE_SHEET.get());
                         pOutput.accept(ModItems.MUSGRAVITE_CLUMP.get());
                         pOutput.accept(ModItems.NAKAURIITE_CLUMP.get());
-                        pOutput.accept(ModItems.NAMANSILLITE_FIBERS.get());
+                        pOutput.accept(ModItems.NAMANSILITE_FIBERS.get());
                         pOutput.accept(ModItems.NATROLITE_FIBERS.get());
                         pOutput.accept(ModItems.NEPHELINE_CRYSTAL.get());
                         pOutput.accept(ModItems.NICKEL_NATIVE.get());
@@ -1678,7 +1678,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.NITROCALCITE_CRYSTAL.get());
                         pOutput.accept(ModItems.NOLANITE_CHUNK.get());
                         pOutput.accept(ModItems.NONTRONITE_CLUMP.get());
-                        pOutput.accept(ModItems.NORDSTRANITE_CLUMP.get());
+                        pOutput.accept(ModItems.NORDSTRANDITE_CLUMP.get());
                         pOutput.accept(ModItems.NORSETHITE_CRYSTAL.get());
                         pOutput.accept(ModItems.NOSEAN_CRYSTAL.get());
                         pOutput.accept(ModItems.OBSIDIAN_SHARD.get());
@@ -1771,7 +1771,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.QUARTZ_RUTILATED.get());
                         pOutput.accept(ModItems.QUARTZ_SHOCKED_CHUNK.get());
                         pOutput.accept(ModItems.QUARTZINE_NODULE.get());
-                        pOutput.accept(ModItems.QUETZACOATLITE_FIBERS.get());
+                        pOutput.accept(ModItems.QUETZALCOATLITE_FIBERS.get());
                         pOutput.accept(ModItems.RAGUINITE_CRYSTAL.get());
                         pOutput.accept(ModItems.RANKINITE_CRYSTAL.get());
                         pOutput.accept(ModItems.REALGAR_CRYSTAL.get());
@@ -1830,7 +1830,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SMOKY_QUARTZ_SHARD.get());
                         pOutput.accept(ModItems.SMYTHITE_SHARDS.get());
                         pOutput.accept(ModItems.SODALITE_CHUNK.get());
-                        pOutput.accept(ModItems.SPERRYLITE_CRYTAL.get());
+                        pOutput.accept(ModItems.SPERRYLITE_CRYSTAL.get());
                         pOutput.accept(ModItems.SPESSARTINE_CRYSTAL.get());
                         pOutput.accept(ModItems.SPHALERITE_CRYSTAL.get());
                         pOutput.accept(ModItems.SPHEROCOBALTITE_CUBE.get());
@@ -1847,7 +1847,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.STRONALSITE_CHUNK.get());
                         pOutput.accept(ModItems.STRONTIANITE_FIBERS.get());
                         pOutput.accept(ModItems.STRUVITE_CRYSTAL.get());
-                        pOutput.accept(ModItems.SUDOLITE_SHEET.get());
+                        pOutput.accept(ModItems.SUDOITE_SHEET.get());
                         pOutput.accept(ModItems.SUENOITE_FIBERS.get());
                         pOutput.accept(ModItems.SUGILITE_CRYSTAL.get());
                         pOutput.accept(ModItems.SULFUR_NATIVE.get());
@@ -1857,7 +1857,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SYLVITE_CUBE.get());
                         pOutput.accept(ModItems.SYNGENITE_CRYSTAL.get());
                         pOutput.accept(ModItems.SZAIBELYITE_FIBERS.get());
-                        pOutput.accept(ModItems.SZOMOLKONITE_CHUNK.get());
+                        pOutput.accept(ModItems.SZOMOLNOKITE_CHUNK.get());
                         pOutput.accept(ModItems.TAENITE_CUBE.get());
                         pOutput.accept(ModItems.TALC_SHEET.get());
                         pOutput.accept(ModItems.TALC_BEACONITE_FIBERS.get());
@@ -1889,9 +1889,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.TOURMALINE_CRYSTAL.get());
                         pOutput.accept(ModItems.TREMOLITE_FIBERS.get());
                         pOutput.accept(ModItems.TRIDYMITE_SHEET.get());
-                        pOutput.accept(ModItems.TRIPHYLLITE_CRYSTAL.get());
+                        pOutput.accept(ModItems.TRIPHYLITE_CRYSTAL.get());
                         pOutput.accept(ModItems.TRIPLITE_CHUNK.get());
-                        pOutput.accept(ModItems.TROILLITE_SHARDS.get());
+                        pOutput.accept(ModItems.TROILITE_SHARDS.get());
                         pOutput.accept(ModItems.TRONA_FIBERS.get());
                         pOutput.accept(ModItems.TRUFFITE_COAL.get());
                         pOutput.accept(ModItems.TSAREGORODTSEVITE_CLUMP.get());
