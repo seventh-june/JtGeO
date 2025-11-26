@@ -1,6 +1,6 @@
 package net.junedev.junetech_geo.api.interfaces;
 
-import net.junedev.junetech_geo.api.enums.SubTag;
+import net.junedev.junetech_geo.api.materials.SubTag;
 //thanks mitch
 public interface ISubTagContainer {
 

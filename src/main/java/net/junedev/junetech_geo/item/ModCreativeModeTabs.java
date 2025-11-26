@@ -139,9 +139,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SANDSTONE_FELDSPATHIC_ARENITE.get());
                         pOutput.accept(ModBlocks.SANDSTONE_FELDSPATHIC_METAXITE.get());
                         pOutput.accept(Blocks.RED_SANDSTONE);
-                        pOutput.accept(ModBlocks.SANDSTONE_QUARTZ_ARENITE.get());
+                        pOutput.accept(ModBlocks.QUARTZ_ARENITE.get());
                         pOutput.accept(ModBlocks.SANDSTONE_MANGANESE.get());
-                        pOutput.accept(ModBlocks.SANDSTONE_ARKOSE.get());
+                        pOutput.accept(ModBlocks.ARKOSE.get());
+                        pOutput.accept(ModBlocks.ARKOSE_CROSSBEDDED.get());
+                        pOutput.accept(ModBlocks.ARKOSE_RUBBLE.get());
                         pOutput.accept(ModBlocks.SANDSTONE_GREYWACKE.get());
                         pOutput.accept(ModBlocks.SANDSTONE_GREYWACKE_LITHIC.get());
                         pOutput.accept(ModBlocks.SANDSTONE_GREENSAND.get());
@@ -350,16 +352,16 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CITRINE_CRYSTAL_BLOCK.get()))
                     .title(Component.translatable("creativetab.minerals"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModBlocks.ABELLAITE.get());
-                        pOutput.accept(ModBlocks.ACANTHITE.get());
-                        pOutput.accept(ModBlocks.ACTINOLITE.get());
-                        pOutput.accept(ModBlocks.ADACHIITE.get());
-                        pOutput.accept(ModBlocks.ADAMITE.get());
-                        pOutput.accept(ModBlocks.ADULARIA.get());
-                        pOutput.accept(ModBlocks.AEGIRINE.get());
-                        pOutput.accept(ModBlocks.AENIGMATITE.get());
-                        pOutput.accept(ModBlocks.AFGHANITE.get());
-                        pOutput.accept(ModBlocks.AGARDITE.get());
+                        pOutput.accept(ModBlocks.ABELLAITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ACANTHITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ACTINOLITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ADACHIITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ADAMITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ADULARIA_BLOCK.get());
+                        pOutput.accept(ModBlocks.AEGIRINE_BLOCK.get());
+                        pOutput.accept(ModBlocks.AENIGMATITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.AFGHANITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.AGARDITE_BLOCK.get());
                         pOutput.accept(ModBlocks.AGATE_GEODE_BLOCK.get());
                         pOutput.accept(ModBlocks.AGRELLITE.get());
                         pOutput.accept(ModBlocks.AKERMANITE.get());
@@ -891,7 +893,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PSILOMELANE.get());
                         pOutput.accept(ModBlocks.PURPURITE.get());
                         pOutput.accept(ModBlocks.PUMPELLYITE.get());
-                        pOutput.accept(ModBlocks.PYRITE.get());
+                        pOutput.accept(ModBlocks.PYRITE_BLOCK.get());
                         pOutput.accept(ModBlocks.PYROBITUMEN.get());
                         pOutput.accept(ModBlocks.PYROCHLORE.get());
                         pOutput.accept(ModBlocks.PYROLUSITE.get());
@@ -2114,8 +2116,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SMOKY_PILLAR.get());
                         pOutput.accept(ModBlocks.SMOKY_POLISHED.get());
                         pOutput.accept(ModBlocks.ADAKITE_BRICKS.get());
-                        pOutput.accept(ModBlocks.ADAKITE_BRICKS_SMALL.get());
-                        pOutput.accept(ModBlocks.ADAKITE_POLISHED.get());
+                        pOutput.accept(ModBlocks.ADAKITE_SMALL_BRICKS.get());
+                        pOutput.accept(ModBlocks.SMOOTH_ADAKITE.get());
                         pOutput.accept(ModBlocks.ANTHRACITE_BRICKS.get());
                         pOutput.accept(ModBlocks.ANTHRACITE_BRICKS_SMALL.get());
                         pOutput.accept(ModBlocks.ANTHRACITE_POLISHED.get());

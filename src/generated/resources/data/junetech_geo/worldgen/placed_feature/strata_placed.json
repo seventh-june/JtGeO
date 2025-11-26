@@ -1,0 +1,12 @@
+{
+  "feature": "junetech_geo:strata_configured",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

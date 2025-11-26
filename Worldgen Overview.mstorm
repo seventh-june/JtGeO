@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "uuid": "b255972f-47f7-441b-9830-fe812a67f966",
+      "text": "# Noise Settings\nA dataset containing instructions for \u003cbr\u003e\nhow generation should occur. These \u003cbr\u003e\ninclude Surface Rules.",
+      "hasBorder": true,
+      "x": 1299,
+      "y": -527,
+      "lineStyle": "SOLID",
+      "isMarkdown": true
+    },
+    {
+      "uuid": "a93ffe29-2510-4468-83ff-04df75dd3355",
+      "text": "# Surface Rule\nA decision tree that determines what block \u003cbr\u003e\nis placed at a coordinate based on the noise there.",
+      "hasBorder": true,
+      "x": 1259,
+      "y": -664,
+      "lineStyle": "SOLID",
+      "isMarkdown": true
+    },
+    {
+      "uuid": "db43b12b-67b5-4aa0-aaf8-63af647b6b0b",
+      "text": "# Noise Router\nA set of Density Functions mapped to a specific\u003cbr\u003e \npurpose needed by the Noise Settings.",
+      "hasBorder": true,
+      "x": 972,
+      "y": -527,
+      "lineStyle": "SOLID",
+      "isMarkdown": true
+    },
+    {
+      "uuid": "56ef05bb-66f5-403f-9dd8-114c18f179ab",
+      "text": "# Density Function\nA mathematical function configured by data-driven means.\u003cbr\u003e\nThey may be chained. The function input is a `BlockPos`.\u003cbr\u003e\nDensity functions may rely on and chain noises.",
+      "hasBorder": true,
+      "x": 785,
+      "y": -888,
+      "lineStyle": "SOLID",
+      "isMarkdown": true
+    },
+    {
+      "uuid": "e799f140-3ae0-4cb9-bd8e-06cd87726b48",
+      "text": "# Noise JSON\nWhen something asks for a noise ID, these are\u003cbr\u003e\nreferenced to indicate the parameters the\u003cbr\u003e\nVanilla Perlin Noise should use.",
+      "hasBorder": true,
+      "x": 1259,
+      "y": -888,
+      "lineStyle": "SOLID",
+      "isMarkdown": true
+    },
+    {
+      "uuid": "48250376-7fcd-416a-8d9b-ea82c6618d0e",
+      "text": "# Vanilla Perlin Noise\n\n\n",
+      "hasBorder": true,
+      "x": 1597,
+      "y": -779,
+      "lineStyle": "SOLID",
+      "isMarkdown": true
+    },
+    {
+      "uuid": "65d5dfe3-eea2-46a7-9be5-c364a223f574",
+      "text": "# Generation\nCalculates the parameters needed for generation\u003cbr\u003e\naccording to the Noise Settings passed to it.\u003cbr\u003e\nNoise keys mapped to a Noise JSON will query a result\u003cbr\u003e\nfrom Vanilla Perlin Noise.",
+      "hasBorder": true,
+      "x": 1769,
+      "y": -527,
+      "lineStyle": "SOLID",
+      "isMarkdown": true
+    }
+  ],
+  "links": [
+    {
+      "fromUuid": "a93ffe29-2510-4468-83ff-04df75dd3355",
+      "toUuid": "b255972f-47f7-441b-9830-fe812a67f966",
+      "fromArrow": false,
+      "toArrow": true,
+      "lineStyle": "SOLID"
+    },
+    {
+      "fromUuid": "db43b12b-67b5-4aa0-aaf8-63af647b6b0b",
+      "toUuid": "b255972f-47f7-441b-9830-fe812a67f966",
+      "fromArrow": false,
+      "toArrow": true,
+      "lineStyle": "SOLID"
+    },
+    {
+      "fromUuid": "56ef05bb-66f5-403f-9dd8-114c18f179ab",
+      "toUuid": "db43b12b-67b5-4aa0-aaf8-63af647b6b0b",
+      "label": "Contained by",
+      "fromArrow": false,
+      "toArrow": true,
+      "lineStyle": "SOLID"
+    },
+    {
+      "fromUuid": "e799f140-3ae0-4cb9-bd8e-06cd87726b48",
+      "toUuid": "56ef05bb-66f5-403f-9dd8-114c18f179ab",
+      "label": "Used by",
+      "fromArrow": false,
+      "toArrow": true,
+      "lineStyle": "SOLID"
+    },
+    {
+      "fromUuid": "e799f140-3ae0-4cb9-bd8e-06cd87726b48",
+      "toUuid": "a93ffe29-2510-4468-83ff-04df75dd3355",
+      "label": "Used by",
+      "fromArrow": false,
+      "toArrow": true,
+      "lineStyle": "SOLID"
+    },
+    {
+      "fromUuid": "b255972f-47f7-441b-9830-fe812a67f966",
+      "toUuid": "65d5dfe3-eea2-46a7-9be5-c364a223f574",
+      "label": "Deserialization",
+      "fromArrow": false,
+      "toArrow": true,
+      "lineStyle": "SOLID"
+    },
+    {
+      "fromUuid": "48250376-7fcd-416a-8d9b-ea82c6618d0e",
+      "toUuid": "65d5dfe3-eea2-46a7-9be5-c364a223f574",
+      "label": "Exchanges data",
+      "fromArrow": true,
+      "toArrow": true,
+      "lineStyle": "SOLID"
+    }
+  ],
+  "rectangles": [
+    {
+      "x": 787,
+      "y": -743,
+      "width": 667,
+      "height": 304
+    }
+  ]
+}

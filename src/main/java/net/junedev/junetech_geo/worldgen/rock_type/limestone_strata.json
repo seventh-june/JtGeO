@@ -6,9 +6,9 @@
   [
     {"": "junetech_geo:calcite_group", "weight": 51 },
     {"": "junetech_geo:dolomite_group", "weight": 30},
-    {"": "junetech_geo:aragonite_crystal_block", "weight": 8},
+    {"": "junetech_geo:aragonite_crystal_block", "weight": 2},
     {"": "junetech_geo:hematite_block", "weight": 2},
-    {"": "junetech_geo:chert", "weight": 2},
+    {"": "junetech_geo:chert", "weight": 8},
     {"": "junetech_geo:quicklime", "weight": 1}
   ]
 }

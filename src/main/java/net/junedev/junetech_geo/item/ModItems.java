@@ -57,6 +57,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> AMBER_SHARD = ITEMS.register("amber_shard",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MOSQUITO_AMBER_SHARD = ITEMS.register("mosquito_amber_shard",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> OPAL_SHARD = ITEMS.register("opal_shard",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> OBSIDIAN_SHARD = ITEMS.register("obsidian_shard",
@@ -182,6 +184,52 @@ public class ModItems {
         public static final RegistryObject<Item> MAGNIFYING_GLASS = ITEMS.register("magnifying_glass",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> FIELD_NOTEBOOK = ITEMS.register("field_notebook",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BOROSILICATE_GLASS_BAR = ITEMS.register("borosilicate_glass_bar",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> FLASK = ITEMS.register("flask",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> IRON_MESH = ITEMS.register("iro_mesh",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> LITMUS_PAPER = ITEMS.register("litmus_paper",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PETRI_DISH = ITEMS.register("petri_dish",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SPOOL_COPPER = ITEMS.register("spool_copper",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SPOOL_IRON = ITEMS.register("spool_iron",
+                () -> new Item(new Item.Properties()));
+
+        //Ore Stuff / Rock Byproducts
+        public static final RegistryObject<Item> FELSIC_CLAST_MIXTURE = ITEMS.register("felsic_clast_mixture",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GAS_SHALE_RAW = ITEMS.register("gas_shale_raw",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GOSSAN_AZURITE_RAW = ITEMS.register("gossan_azurite_raw",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GOSSAN_MAGNETITE_RAW = ITEMS.register("gossan_magnetite_raw",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> KEROGEN_1 = ITEMS.register("kerogen_1",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> KEROGEN_2 = ITEMS.register("kerogen_2",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> KEROGEN_2S = ITEMS.register("kerogen_2s",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> KEROGEN_3 = ITEMS.register("kerogen_3",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> KEROGEN_4 = ITEMS.register("kerogen_4",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> KSPAR_CLASTS = ITEMS.register("kspar_clasts",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> LITHIC_CLASTS = ITEMS.register("lithic_clasts",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MAFIC_CLAST_MIXTURE = ITEMS.register("mafic_clast_mixture",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> OIL_SHALE_RAW = ITEMS.register("oil_shale_raw",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PLAGIOCLASE_CLASTS = ITEMS.register("plagioclase_clasts",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> QUARTZ_CLASTS = ITEMS.register("quartz_clasts",
                 () -> new Item(new Item.Properties()));
 
         //Minerals
@@ -1230,6 +1278,8 @@ public class ModItems {
         public static final RegistryObject<Item> PURPURITE_CHUNK = ITEMS.register("purpurite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PYRITE_CUBE = ITEMS.register("pyrite_cube",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PYRITE_FRAMBOID = ITEMS.register("pyrite_framboid",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PYROCHLORE_CRYSTAL = ITEMS.register("pyrochlore_crystal",
                 () -> new Item(new Item.Properties()));

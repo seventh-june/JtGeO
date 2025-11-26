@@ -1,0 +1,1575 @@
+{
+  "junetech_geo.Quartz": [
+    {
+      "name": "Quartz",
+      "materialID": 1,
+      "formula": "SiO₂",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Quartz",
+      "color": "CustomQuartz",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Calcite": [
+    {
+      "name": "Calcite",
+      "materialID": 2,
+      "formula": "CaCO₃",
+      "hardness": 3,
+      "lustre": "Vitreous",
+      "crystalHabit": "Rhombohedral",
+      "color": "CustomCalcite",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Plagioclase": [
+    {
+      "name": "Plagioclase",
+      "materialID": 3,
+      "formula": "NaAlSi₃O₈ – CaAl₂Si₂O₈",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "White",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.AlkaliFeldspar": [
+    {
+      "name": "Alkali Feldspar",
+      "materialID": 4,
+      "formula": "K(AlSi₃O₈)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "Salmon",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Olivine": [
+    {
+      "name": "Olivine",
+      "materialID": 5,
+      "formula": "(Ca,Fe,Mn,Ni,Mg)SiO₄",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "OliveGreen",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Pyroxene": [
+    {
+      "name": "Pyroxene",
+      "materialID": 6,
+      "formula": "X²⁺Z³⁺(Si,Al)₂O₆",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Multicrystalline",
+      "color": "Brown-Green",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Muscovite": [
+    {
+      "name": "Muscovite",
+      "materialID": 7,
+      "formula": "KAl₂(AlSi₃O₁₀)(OH)₂",
+      "hardness": 2,
+      "lustre": "Silky",
+      "crystalHabit": "Micaceous",
+      "color": "PaleMint",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Biotite": [
+    {
+      "name": "Biotite",
+      "materialID": 8,
+      "formula": "K(Mg,Fe)₃(AlSi₃O₁₀)(F,OH)₂\n",
+      "hardness": 3,
+      "lustre": "Pearly",
+      "crystalHabit": "Micaceous",
+      "color": "Black-Brown",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Garnet": [
+    {
+      "name": "Garnet",
+      "materialID": 9,
+      "formula": "X²⁺₃Z³⁺₂(SiO₄)₃",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Dodecahedral",
+      "color": "CustomGarnet",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Spinel": [
+    {
+      "name": "Spinel",
+      "materialID": 10,
+      "formula": "MgAl₂O₄",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "Octahedral",
+      "color": "RedViolet",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Clinopyroxene": [
+    {
+      "name": "Clinopyroxene",
+      "materialID": 11,
+      "formula": "X²⁺₃Z³⁺₂(SiO₄)₃",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Prismatic",
+      "color": "Black-Brown",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Orthopyroxene": [
+    {
+      "name": "Orthopyroxene",
+      "materialID": 12,
+      "formula": "(Mn,Mg,Fe,Ca)₂Si₂O₆",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "Black-Green",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Amphibole": [
+    {
+      "name": "Amphibole",
+      "materialID": 13,
+      "formula": null,
+      "hardness": 5,
+      "lustre": "Vitreous",
+      "crystalHabit": "Prismatic",
+      "color": "Black-Brown",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Hornblende": [
+    {
+      "name": "Hornblende",
+      "materialID": 14,
+      "formula": "AlkCa2(X²⁺Z³⁺)(Si,Al)₈(OH,F,Cl)₂",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Prismatic",
+      "color": "CustomHornblende",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Dolomite": [
+    {
+      "name": "Dolomite",
+      "materialID": 15,
+      "formula": "CaMg(CO₃)₂",
+      "hardness": 4,
+      "lustre": "Vitreous",
+      "crystalHabit": "Rhombohedral",
+      "color": "PinkOffWhite",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Hematite": [
+    {
+      "name": "Hematite",
+      "materialID": 16,
+      "formula": "Fe₂O₃",
+      "hardness": 6,
+      "lustre": "Metallic",
+      "crystalHabit": "Tabular",
+      "color": "Rust",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Epidote": [
+    {
+      "name": "Epidote",
+      "materialID": 17,
+      "formula": "{Ca₂}[Al₂Fe³⁺}(SiO₄)(Si₂O₇)O(OH)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Reticulated",
+      "color": "Brown-Green",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Chlorite": [
+    {
+      "name": "Chlorite",
+      "materialID": 18,
+      "formula": "(Al,Fe²⁺,Fe³⁺,Li,Mg,Mn,Ni)₅(Al,Fe³⁺,Si)₄(O,OH)₁₈",
+      "hardness": 2,
+      "lustre": "Greasy",
+      "crystalHabit": "Tabular",
+      "color": "OliveGreen",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Pyrite": [
+    {
+      "name": "Pyrite",
+      "materialID": 19,
+      "formula": "FeS₂",
+      "hardness": 7,
+      "lustre": "Metallic",
+      "crystalHabit": "Cubic",
+      "color": "Brass",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Rutile": [
+    {
+      "name": "Rutile",
+      "materialID": 20,
+      "formula": "TiO₂",
+      "hardness": 6,
+      "lustre": "Adamantine",
+      "crystalHabit": "Reticulated",
+      "color": "BloodRed",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Corundum": [
+    {
+      "name": "Corundum",
+      "materialID": 21,
+      "formula": "Al₂O₃",
+      "hardness": 9,
+      "lustre": "Silky",
+      "crystalHabit": "Hexagonal",
+      "color": "Colourless",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Magnetite": [
+    {
+      "name": "Magnetite",
+      "materialID": 22,
+      "formula": "Fe²⁺Fe³⁺₂O₄",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Octahedral",
+      "color": "IronBlack",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Sphalerite": [
+    {
+      "name": "Sphalerite",
+      "materialID": 23,
+      "formula": "ZnS",
+      "hardness": 4,
+      "lustre": "Adamantine",
+      "crystalHabit": "Vitreous",
+      "color": "Yellow-Orange",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Prehnite": [
+    {
+      "name": "Prehnite",
+      "materialID": 24,
+      "formula": "Ca₂Al₂Si₃O₁₀(OH)₂",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Botryoidal",
+      "color": "MintGreen",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Pumpellyite": [
+    {
+      "name": "Pumpellyite",
+      "materialID": 25,
+      "formula": "Ca₂X²⁺Al₂[Si₂O₆(OH)][SiO₄](OH)₂(OH,O)",
+      "hardness": 5,
+      "lustre": "Vitreous",
+      "crystalHabit": "Radial",
+      "color": "Black-Green",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Asbestos": [
+    {
+      "name": "Asbestos",
+      "materialID": 26,
+      "formula": "X²⁺₃[Si₂O₅](OH)₄",
+      "hardness": 2,
+      "lustre": "Silky",
+      "crystalHabit": "Asbestiform",
+      "color": "White",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Stibnite": [
+    {
+      "name": "Stibnite",
+      "materialID": 27,
+      "formula": "Sb₂S₃",
+      "hardness": 2,
+      "lustre": "Metallic",
+      "crystalHabit": "Reticulated",
+      "color": "Blue-Grey",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Chalcopyrite": [
+    {
+      "name": "Chalcopyrite",
+      "materialID": 28,
+      "formula": "CuFeS₂",
+      "hardness": 4,
+      "lustre": "Metallic",
+      "crystalHabit": "Disphenoidal",
+      "color": "CustomChalcopyrite",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Sillimanite": [
+    {
+      "name": "Sillimanite",
+      "materialID": 29,
+      "formula": "Al₂(SiO₄)O",
+      "hardness": 7,
+      "lustre": "Greasy",
+      "crystalHabit": "Fibrous",
+      "color": "IronBlack",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Cerussite": [
+    {
+      "name": "Cerussite",
+      "materialID": 30,
+      "formula": "PbCO₃",
+      "hardness": 3,
+      "lustre": "Adamantine",
+      "crystalHabit": "Reticulated",
+      "color": "YellowOffWhite",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Tourmaline": [
+    {
+      "name": "Tourmaline",
+      "materialID": 31,
+      "formula": "Alk(X²⁺)(Z³⁺₆)(Si₆O₁₈)(BO₃)₃(O,OH)(F,O,OH)",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Prismatic",
+      "color": "Black",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Fluorite": [
+    {
+      "name": "Fluorite",
+      "materialID": 32,
+      "formula": "CaF₂",
+      "hardness": 4,
+      "lustre": "Vitreous",
+      "crystalHabit": "Octahedral",
+      "color": "CustomFluorite",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Halite": [
+    {
+      "name": "Halite",
+      "materialID": 33,
+      "formula": "NaCl",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Cubic",
+      "color": "CustomHalite",
+      "rarity": 0,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Galena": [
+    {
+      "name": "Galena",
+      "materialID": 34,
+      "formula": "PbS",
+      "hardness": 2,
+      "lustre": "Metallic",
+      "crystalHabit": "Cubic",
+      "color": "LeadGrey",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Cassiterite": [
+    {
+      "name": "Cassiterite",
+      "materialID": 35,
+      "formula": "SnO₂",
+      "hardness": 7,
+      "lustre": "Adamantine",
+      "crystalHabit": "Prismatic",
+      "color": "Black-Purple",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Kyanite": [
+    {
+      "name": "Kyanite",
+      "materialID": 36,
+      "formula": "Al₂(SiO₄)O",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "BlastPrismatic",
+      "color": "Periwinkle",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Apatite": [
+    {
+      "name": "Apatite",
+      "materialID": 37,
+      "formula": "Ca₅(PO₄)₃(Cl,F,OH)\n",
+      "hardness": 5,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "Turquoise",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Gypsum": [
+    {
+      "name": "Gypsum",
+      "materialID": 38,
+      "formula": "CaSO₄ · H₂O",
+      "hardness": 2,
+      "lustre": "Vitreous",
+      "crystalHabit": "Acicular",
+      "color": "Yellow-Orange",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Diopside": [
+    {
+      "name": "Diopside",
+      "materialID": 39,
+      "formula": "CaMg(Si₂O₆)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Prismatic",
+      "color": "Black-Green",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Andalusite": [
+    {
+      "name": "Andalusite",
+      "materialID": 40,
+      "formula": "Al₂(SiO₄)O",
+      "hardness": 2,
+      "lustre": "Vitreous",
+      "crystalHabit": "Prismatic",
+      "color": "Peach",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Smectite": [
+    {
+      "name": "Smectite Group",
+      "materialID": 41,
+      "formula": "(Ca,Na)((Al,Fe,Mg)₄(Si,Al)₈O₂₀((OH)₄,H₂O))₂",
+      "hardness": 2,
+      "lustre": "Earthy",
+      "crystalHabit": "Clay",
+      "color": "ClayBlue",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Albite": [
+    {
+      "name": "Albite",
+      "materialID": 42,
+      "formula": "CaAl₂(Si₂O₈)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Tabular",
+      "color": "Colourless",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Sanidine": [
+    {
+      "name": "Sanidine",
+      "materialID": 43,
+      "formula": "K(AlSi₃O₈)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Tabular",
+      "color": "Grey",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Illite": [
+    {
+      "name": "Illite",
+      "materialID": 44,
+      "formula": "KAl₂[AlSi₃O₁₀](OH)₂",
+      "hardness": 1,
+      "lustre": "Earthy",
+      "crystalHabit": "Clay",
+      "color": "Grey-White",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Forsterite": [
+    {
+      "name": "Forsterite",
+      "materialID": 45,
+      "formula": "MgAl₂O₄",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "Green-Brown",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Fayalite": [
+    {
+      "name": "Fayalite",
+      "materialID": 46,
+      "formula": "Fe²⁺Al₂O₄",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Zirconic",
+      "color": "Red-Brown",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Orthoclase": [
+    {
+      "name": "Sanidine",
+      "materialID": 47,
+      "formula": "K(AlSi₃O₈)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "LightGrey",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Anorthite": [
+    {
+      "name": "Anorthite",
+      "materialID": 48,
+      "formula": "NaAl(Si₃O₈)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "Red-Grey",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Microcline": [
+    {
+      "name": "Microcline",
+      "materialID": 49,
+      "formula": "K(AlSi₃O₈)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Amethystine",
+      "color": "Salmon",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Kaolinite": [
+    {
+      "name": "Kaolinite",
+      "materialID": 50,
+      "formula": "Al₂(Si₂O₅)(OH)₄",
+      "hardness": 2,
+      "lustre": "Earthy",
+      "crystalHabit": "Clay",
+      "color": "White",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Chrysocolla": [
+    {
+      "name": "Chrysocolla",
+      "materialID": 51,
+      "formula": "Cu₂Al(H₂Si₂O₅)(OH₄) · H₂O",
+      "hardness": 3,
+      "lustre": "Waxt",
+      "crystalHabit": "Botryoidal",
+      "color": "Turquoise",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Chrysotile": [
+    {
+      "name": "Chrysotile",
+      "materialID": 52,
+      "formula": "Mg₃(Si₂O₅)(OH)₄",
+      "hardness": 2,
+      "lustre": "Silky",
+      "crystalHabit": "Asbestiform",
+      "color": "Yellow-Green",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Chalcedony": [
+    {
+      "name": "Chalcedony",
+      "materialID": 53,
+      "formula": "SiO₂",
+      "hardness": 7,
+      "lustre": "Waxy",
+      "crystalHabit": "Amorphous",
+      "color": "CustomChalcedony",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Ilmenite": [
+    {
+      "name": "Ilmenite",
+      "materialID": 54,
+      "formula": "FeTiO₃",
+      "hardness": 2,
+      "lustre": "Metallic",
+      "crystalHabit": "FlatHexagonal",
+      "color": "IronBlack",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Sodalite": [
+    {
+      "name": "Sodalite",
+      "materialID": 55,
+      "formula": "Na₄(Si₃Al₃)O₁₂Cl",
+      "hardness": 6,
+      "lustre": "Dull",
+      "crystalHabit": "Massive",
+      "color": "RoyalBlue",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Azurite": [
+    {
+      "name": "Azurite",
+      "materialID": 56,
+      "formula": "Cu₃(CO₃)₂(OH)₂",
+      "hardness": 4,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "RoyalBlue",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Topaz": [
+    {
+      "name": "Topaz",
+      "materialID": 57,
+      "formula": "Al₂(SiO₄)(F,OH)₂",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "Reticulated",
+      "color": "CustomTopaz",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Spodumene": [
+    {
+      "name": "Gypsum",
+      "materialID": 58,
+      "formula": "LiAlSi₂O₆",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "Lavender",
+      "rarity": 7,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Uraninite": [
+    {
+      "name": "Uraninite",
+      "materialID": 59,
+      "formula": "UO₂",
+      "hardness": 6,
+      "lustre": "Greasy",
+      "crystalHabit": "Botryoidal",
+      "color": "CustomUraninite",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Molybdenite": [
+    {
+      "name": "Molybdenite",
+      "materialID": 60,
+      "formula": "MoS₂",
+      "hardness": 1,
+      "lustre": "Metallic",
+      "crystalHabit": "Rosette",
+      "color": "LeadGrey",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Cinnabar": [
+    {
+      "name": "Cinnabar",
+      "materialID": 61,
+      "formula": "HgS",
+      "hardness": 2,
+      "lustre": "Vitreous",
+      "crystalHabit": "Tabular",
+      "color": "CinnabarRed",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Zircon": [
+    {
+      "name": "Zircon",
+      "materialID": 62,
+      "formula": "Zr(SiO₄)",
+      "hardness": 7,
+      "lustre": "Adamantine",
+      "crystalHabit": "Zirconic",
+      "color": "Colourless",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Malachite": [
+    {
+      "name": "Malachite",
+      "materialID": 63,
+      "formula": "Cu₂(CO₃)(OH)₂",
+      "hardness": 4,
+      "lustre": "Silky",
+      "crystalHabit": "Reniform",
+      "color": "CustomMalachite",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Scheelite": [
+    {
+      "name": "Scheelite",
+      "materialID": 64,
+      "formula": "Ca(WO₄)",
+      "hardness": 5,
+      "lustre": "Adamantine",
+      "crystalHabit": "OctahedralPrism",
+      "color": "Goldenrod",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Graphite": [
+    {
+      "name": "Graphite",
+      "materialID": 65,
+      "formula": "C",
+      "hardness": 2,
+      "lustre": "Submetallic",
+      "crystalHabit": "Micaceous",
+      "color": "Grey",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Rhodochrosite": [
+    {
+      "name": "Rhodochrosite",
+      "materialID": 66,
+      "formula": "MnCO₃",
+      "hardness": 4,
+      "lustre": "Vitreous",
+      "crystalHabit": "Rhombohedral",
+      "color": "HotPink",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Magnesite": [
+    {
+      "name": "Magnesite",
+      "materialID": 67,
+      "formula": "MgCO₃",
+      "hardness": 4,
+      "lustre": "Vitreous",
+      "crystalHabit": "Massive",
+      "color": "LightOrange",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Talc": [
+    {
+      "name": "Talc",
+      "materialID": 68,
+      "formula": "Mg₃Si₄O₁₀(OH)₂",
+      "hardness": 1,
+      "lustre": "Waxy",
+      "crystalHabit": "Micaceous",
+      "color": "YellowOffWhite",
+      "rarity": 1,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Augite": [
+    {
+      "name": "Augite",
+      "materialID": 69,
+      "formula": "(Ca,Fe,Mg)(Mg,Fe)Si₂O₆",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "DustyBlack",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Aegirine": [
+    {
+      "name": "Aegirine",
+      "materialID": 70,
+      "formula": "NaFe³⁺Si₂O₆",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "Brown-Green",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Anatase": [
+    {
+      "name": "Anatase",
+      "materialID": 71,
+      "formula": "TiO₂",
+      "hardness": 6,
+      "lustre": "Adamantine",
+      "crystalHabit": "Octahedral",
+      "color": "Orange-Brown",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Opal": [
+    {
+      "name": "Opal",
+      "materialID": 72,
+      "formula": "SiO₂ · H₂O",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Opaline",
+      "color": "CustomOpal",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Borax": [
+    {
+      "name": "Borax",
+      "materialID": 73,
+      "formula": "Na₂(B₄O₅)(OH)₄ · 8H₂O",
+      "hardness": 2,
+      "lustre": "Vitreous",
+      "crystalHabit": "PrismaticTwinning",
+      "color": "YellowOffWhite",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Sylvite": [
+    {
+      "name": "Sylvite",
+      "materialID": 74,
+      "formula": "KCl",
+      "hardness": 2,
+      "lustre": "Vitreous",
+      "crystalHabit": "Cubic",
+      "color": "YellowOffWhite",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Pyrochlore": [
+    {
+      "name": "Pyrochlore",
+      "materialID": 75,
+      "formula": "X²⁺₂Nb₂(O,OH)₆(F,OH)",
+      "hardness": 4,
+      "lustre": "Vitreous",
+      "crystalHabit": "Octahedral",
+      "color": "Yellow-Orange",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.BandedIron": [
+    {
+      "name": "Banded Iron",
+      "materialID": 76,
+      "formula": "(Fe₂O₃)(Fe₃O₄)(SiO₂)₄",
+      "hardness": 6,
+      "lustre": "Rocky",
+      "crystalHabit": "Massive",
+      "color": "PaleRose",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Acanthite": [
+    {
+      "name": "Acanthite",
+      "materialID": 77,
+      "formula": "Ag₂S",
+      "hardness": 2,
+      "lustre": "Metallic",
+      "crystalHabit": "Reticulated",
+      "color": "Grey-Green",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Beryl": [
+    {
+      "name": "Beryl",
+      "materialID": 78,
+      "formula": "Be₃Al₂(Si₆O₁₈)",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "Green",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Cobaltite": [
+    {
+      "name": "Cobaltite",
+      "materialID": 79,
+      "formula": "CoAsS",
+      "hardness": 5,
+      "lustre": "Metallic",
+      "crystalHabit": "Pseudocubic",
+      "color": "RedSilver",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Alum": [
+    {
+      "name": "Alum",
+      "materialID": 80,
+      "formula": "(K,Na)Al(SO₄)₂ ·12 H₂O",
+      "hardness": 2,
+      "lustre": "Vitreous",
+      "crystalHabit": "Tetrahedral",
+      "color": "YellowOffWhite",
+      "rarity": 3,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Lepidolite": [
+    {
+      "name": "Lepidolite",
+      "materialID": 81,
+      "formula": "K(Li,Al)₃(Si₄O₁₀)(F,OH)₂",
+      "hardness": 3,
+      "lustre": "Pearly",
+      "crystalHabit": "Micaceous",
+      "color": "RedViolet",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Chromite": [
+    {
+      "name": "Chromite",
+      "materialID": 82,
+      "formula": "FeCr₂O₄",
+      "hardness": 5,
+      "lustre": "Resinous",
+      "crystalHabit": "Octahedral",
+      "color": "Black",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Ruby": [
+    {
+      "name": "Ruby",
+      "materialID": 83,
+      "formula": "(Al,Cr)₂O₃",
+      "hardness": 9,
+      "lustre": "Adamantine",
+      "crystalHabit": "Corundum",
+      "color": "CustomRuby",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Sapphire": [
+    {
+      "name": "Sapphire",
+      "materialID": 84,
+      "formula": "(Al,Fe,Ti)₂O₃",
+      "hardness": 9,
+      "lustre": "Adamantine",
+      "crystalHabit": "Corundum",
+      "color": "CustomSapphire",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Lazurite": [
+    {
+      "name": "Lazurite",
+      "materialID": 85,
+      "formula": "Na₇Ca(Al₆Si₆O₂₄)(SO₄)(S₃) · H₂O",
+      "hardness": 5,
+      "lustre": "Resinous",
+      "crystalHabit": "Dodecahedral",
+      "color": "Blue",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Gibbsite": [
+    {
+      "name": "Gibbsite",
+      "materialID": 86,
+      "formula": "AlOH₃",
+      "hardness": 3,
+      "lustre": "Pearly",
+      "crystalHabit": "Botryoidal",
+      "color": "PaleTurquoise",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Tantalite": [
+    {
+      "name": "Tantalite",
+      "materialID": 87,
+      "formula": "(Mn,Fe)Ta₂O₆",
+      "hardness": 6,
+      "lustre": "Metallic",
+      "crystalHabit": "Enantiomorphic",
+      "color": "LeadGrey",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.MagnetiteVa": [
+    {
+      "name": "Vanadium-Bearing Magnetite",
+      "materialID": 88,
+      "formula": "Fe(Fe,V)₂O₄",
+      "hardness": 6,
+      "lustre": "Metallic",
+      "crystalHabit": "Octahedral",
+      "color": "Black-Blue",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Emerald": [
+    {
+      "name": "Emerald",
+      "materialID": 89,
+      "formula": "Be₃Al₂(Si₆O₁₈)",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "EmeraldGreen",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Clinoenstatite": [
+    {
+      "name": "Clinoenstatite",
+      "materialID": 90,
+      "formula": "MgSiO₃",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "Browm",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Clinoferrosilite": [
+    {
+      "name": "Clinoferrosilite",
+      "materialID": 91,
+      "formula": "FeSiO₃",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Amethystine",
+      "color": "DarkBrown",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Hypersthene": [
+    {
+      "name": "Augite",
+      "materialID": 92,
+      "formula": "Mg₂Si₂O₆ – Fe²⁺₂Si₂O₆",
+      "hardness": 6,
+      "lustre": "Subvitreous",
+      "crystalHabit": "Amethystine",
+      "color": "FrenchGrey90",
+      "rarity": 4,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Alunite": [
+    {
+      "name": "Alunite",
+      "materialID": 93,
+      "formula": "KAl₃(SO₄)₂(OH)₆",
+      "hardness": 4,
+      "lustre": "Vitreous",
+      "crystalHabit": "Rosette",
+      "color": "LightOrange",
+      "rarity": 2,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Padparadscha": [
+    {
+      "name": "Padparadscha",
+      "materialID": 94,
+      "formula": "(Al,Cr,Fe)₂O₃",
+      "hardness": 9,
+      "lustre": "Adamantine",
+      "crystalHabit": "Corundum",
+      "color": "Pink",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Monazite": [
+    {
+      "name": "Monazite",
+      "materialID": 95,
+      "formula": "REE(PO₄)",
+      "hardness": 5,
+      "lustre": "Vitreous",
+      "crystalHabit": "Dodecahedral",
+      "color": "Rose",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Diamond": [
+    {
+      "name": "Diamond",
+      "materialID": 96,
+      "formula": "C",
+      "hardness": 10,
+      "lustre": "Adamantine",
+      "crystalHabit": "Octahedral",
+      "color": "CustomDiamond",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Jadeite": [
+    {
+      "name": "Jadeite",
+      "materialID": 97,
+      "formula": "Na(Al,Fe)Si₂O₆",
+      "hardness": 6,
+      "lustre": "Pearly",
+      "crystalHabit": "Massive",
+      "color": "JadeGreen",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Pollucite": [
+    {
+      "name": "Pollucite",
+      "materialID": 98,
+      "formula": "(Cs,Na)₂(Al₂Si₄O₁₂) · 2H₂O",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Massive",
+      "color": "PinkOffWhite",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Pentlandite": [
+    {
+      "name": "Pentlandite",
+      "materialID": 99,
+      "formula": "(Ni,Fe)₉S₈",
+      "hardness": 4,
+      "lustre": "Metallic",
+      "crystalHabit": "Massive",
+      "color": "Bronze",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Aquamarine": [
+    {
+      "name": "Aquamarine",
+      "materialID": 100,
+      "formula": "Be₃Al₂(Si₆O₁₈)",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "AuroraBlue",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Heliodor": [
+    {
+      "name": "Heliodor",
+      "materialID": 101,
+      "formula": "Be₃Al₂(Si₆O₁₈)",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "Yellow-Gold",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Aenigmatite": [
+    {
+      "name": "Aenigmatite",
+      "materialID": 102,
+      "formula": "Na₄[Fe₁₀Ti₂]O₄[Si₁₂O₃₆]",
+      "hardness": 6,
+      "lustre": "Greasy",
+      "crystalHabit": "Columnar",
+      "color": "DustyBlack",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Bronzite": [
+    {
+      "name": "Bronzite",
+      "materialID": 103,
+      "formula": "(Mg,Fe²⁺)₂[SiO₃]₂",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hemimorphic",
+      "color": "Bronze",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Ferrosilite": [
+    {
+      "name": "Ferrosilite",
+      "materialID": 104,
+      "formula": "FeSiO₃",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Reticulated",
+      "color": "DarkViolet",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Kosmochlor": [
+    {
+      "name": "Kosmochlor",
+      "materialID": 105,
+      "formula": "NaCrSi₂O₆",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Granular",
+      "color": "EmeraldGreen",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Agardite": [
+    {
+      "name": "Agardite",
+      "materialID": 106,
+      "formula": "REECu₆(AsO₄)₃(OH)₆",
+      "hardness": 4,
+      "lustre": "Vitreous",
+      "crystalHabit": "Acicular",
+      "color": "Turquoise",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Omphacite": [
+    {
+      "name": "Omphacite",
+      "materialID": 107,
+      "formula": "(Na,Ca,Fe²⁺Mg)(Al,Fe³⁺,Fe²⁺Mg)Si₂O₆",
+      "hardness": 6,
+      "lustre": "Tabular",
+      "crystalHabit": "Hexagonal",
+      "color": "Black-Green",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Enstatite": [
+    {
+      "name": "Enstatite",
+      "materialID": 108,
+      "formula": "MgSiO₃",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Prismatic",
+      "color": "Mustard",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.DiopsideCr": [
+    {
+      "name": "Chromian Diopside",
+      "materialID": 109,
+      "formula": "Ca(Mg,Cr²⁺)(Si₂O₆)",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Prismatic",
+      "color": "VibrantGreen",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Alluaudite": [
+    {
+      "name": "Alluaudite",
+      "materialID": 110,
+      "formula": "(Na,Ca)Mn(Fe³⁺,Fe²⁺,Mn,Mg)₂(PO₄)₃",
+      "hardness": 6,
+      "lustre": "Earthy",
+      "crystalHabit": "Reticulated",
+      "color": "Yellow",
+      "rarity": 5,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.EmeraldTrapiche": [
+    {
+      "name": "Trapiche Emerald",
+      "materialID": 111,
+      "formula": "Be₃Al₂(Si₆O₁₈)",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "RadialHexagonal",
+      "color": "DustyBlack",
+      "rarity": 6,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Sperrylite": [
+    {
+      "name": "Sperrylite",
+      "materialID": 112,
+      "formula": "PtAs₂",
+      "hardness": 7,
+      "lustre": "Metallic",
+      "crystalHabit": "PostDodecahedral",
+      "color": "PinkOffWhite",
+      "rarity": 6,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Moissanite": [
+    {
+      "name": "Moissanite",
+      "materialID": 113,
+      "formula": "SiC",
+      "hardness": 9,
+      "lustre": "Vitreous",
+      "crystalHabit": "FlatHexagonal",
+      "color": "Oily",
+      "rarity": 6,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Alexandrite": [
+    {
+      "name": "Alexandrite",
+      "materialID": 114,
+      "formula": "BeAl₂O₄",
+      "hardness": 9,
+      "lustre": "Adamantine",
+      "crystalHabit": "Amethystine",
+      "color": "PaleCyan",
+      "rarity": 6,
+      "customCondition": "AlexandriteEffect"
+    }
+  ],
+  "junetech_geo.Chrysoberyl": [
+    {
+      "name": "Chrysoberyl",
+      "materialID": 115,
+      "formula": "BeAl₂O₄",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "RadialHexagonal",
+      "color": "Yellow",
+      "rarity": 6,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Donpeacorite": [
+    {
+      "name": "Donpeacorite",
+      "materialID": 116,
+      "formula": "(Mn,Mg)MgSi₂O₆",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Massive",
+      "color": "BloodOrange",
+      "rarity": 6,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Pigeonite": [
+    {
+      "name": "Pigeonite",
+      "materialID": 117,
+      "formula": "(Ca,Fe,Mg)(Mg,Fe)Si₂O₆",
+      "hardness": 6,
+      "lustre": "Vitreous",
+      "crystalHabit": "Stellite",
+      "color": "Brown",
+      "rarity": 6,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Protoenstatite": [
+    {
+      "name": "Protoenstatite",
+      "materialID": 118,
+      "formula": "Mg₂Si₂O₆",
+      "hardness": 1,
+      "lustre": "ThinSection",
+      "crystalHabit": "Nanocrystalline",
+      "color": "Watermelon",
+      "rarity": 6,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Abellaite": [
+    {
+      "name": "Abellaite",
+      "materialID": 119,
+      "formula": "NaPb₂(CO₃)₂(OH)",
+      "hardness": 2,
+      "lustre": "Vitreous",
+      "crystalHabit": "Plumose",
+      "color": "White",
+      "rarity": 6,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.RedBeryl": [
+    {
+      "name": "Red Beryl",
+      "materialID": 120,
+      "formula": "Be₃Al₂(Si₆O₁₈)",
+      "hardness": 8,
+      "lustre": "Vitreous",
+      "crystalHabit": "Hexagonal",
+      "color": "CustomRedBeryl",
+      "rarity": 7,
+      "customCondition": null
+    }
+  ],
+  "junetech_geo.Gadolinite": [
+    {
+      "name": "Gadolinite",
+      "materialID": 121,
+      "formula": "(Ce,La,Nd,Y)₂FeBe₂Si₂O₁₀",
+      "hardness": 7,
+      "lustre": "Vitreous",
+      "crystalHabit": "Massive",
+      "color": "Black",
+      "rarity": 7,
+      "customCondition": null
+    }
+  ]
+}
