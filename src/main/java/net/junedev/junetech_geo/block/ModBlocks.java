@@ -1518,13 +1518,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> AMETRINE_BLOCK = registerBlock("ametrine_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> ANTIMONY_BLOCK = registerBlock("antimony_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK), "Sb", true));
     public static final RegistryObject<Block> AMBER_BLOCK = registerBlock("amber_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> ANTHRACITE_BLOCK = registerBlock("anthracite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> ARSENIC_BLOCK = registerBlock("arsenic_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK), "As", true));
     public static final RegistryObject<Block> AVENTURINE_BLOCK = registerBlock("aventurine_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> BARIUM_BLOCK = registerBlock("barium_block",
