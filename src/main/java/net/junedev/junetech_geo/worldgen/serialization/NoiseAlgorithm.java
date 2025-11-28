@@ -86,6 +86,10 @@ public record NoiseAlgorithm(boolean useEnhanced) {
             BootstapContext<NoiseAlgorithm> context, String name, 
             boolean useEnhanced
     ) {
-        context.register(ResourceKey.create(NOISE_ALGORITHM, new ResourceLocation(MOD_ID, name)), new NoiseAlgorithm(useEnhanced));
+        context.register(makeKey(new ResourceLocation(MOD_ID, name)), new NoiseAlgorithm(useEnhanced));
+    }
+
+    public static ResourceKey<NoiseAlgorithm> makeKey(ResourceLocation rl) {
+        return ResourceKey.create(NOISE_ALGORITHM, rl);
     }
 }

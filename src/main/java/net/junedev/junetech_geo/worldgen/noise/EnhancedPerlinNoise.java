@@ -1,11 +1,15 @@
 package net.junedev.junetech_geo.worldgen.noise;
 
+import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
 import it.unimi.dsi.fastutil.doubles.DoubleList;
+import it.unimi.dsi.fastutil.ints.IntRBTreeSet;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.levelgen.synth.ImprovedNoise;
 import net.minecraft.world.level.levelgen.synth.PerlinNoise;
 import net.minecraft.world.phys.Vec3;
+
+import java.util.stream.IntStream;
 
 /**
  * Modified n-dimensional Perlin noise generator implementing enhanced erosion emulation. This extends the original to automatically maintain datapack serializability
@@ -15,12 +19,25 @@ import net.minecraft.world.phys.Vec3;
  * @author kawaiicakes
  */
 public class EnhancedPerlinNoise extends PerlinNoise {
+    public static PerlinNoise createLegacyForBlendedNoise(RandomSource random, IntStream octaves) {
+        return new EnhancedPerlinNoise(random, makeAmplitudes(new IntRBTreeSet(octaves.boxed().collect(ImmutableList.toImmutableList()))), false);
+    }
+
+    public static PerlinNoise createLegacyForLegacyNetherBiome(RandomSource random, int firstOctave, DoubleList amplitudes) {
+        return new EnhancedPerlinNoise(random, Pair.of(firstOctave, amplitudes), false);
+    }
+
+    public static PerlinNoise create(RandomSource random, int firstOctave, DoubleList amplitudes) {
+        return new EnhancedPerlinNoise(random, Pair.of(firstOctave, amplitudes), true);
+    }
+
     public EnhancedPerlinNoise(
             RandomSource random, Pair<Integer, DoubleList> octavesAndAmplitudes, boolean useNewFactory
     ) {
         super(random, octavesAndAmplitudes, useNewFactory);
     }
 
+    // TODO - add remaining data checks for hardcoded noise usages and anywhere else user config is not already accepted
     @SuppressWarnings("deprecation")
     @Override
     public double getValue(double x, double y, double z, double yScale, double yMax, boolean useFixedY) {

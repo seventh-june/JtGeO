@@ -1,38 +1,50 @@
 package net.junedev.junetech_geo.mixin;
 
+import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
-import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import com.llamalad7.mixinextras.sugar.Local;
-import com.llamalad7.mixinextras.sugar.ref.LocalRef;
-import com.mojang.datafixers.util.Pair;
-import it.unimi.dsi.fastutil.doubles.DoubleList;
-import net.junedev.junetech_geo.util.ExpandedNoiseParameters;
-import net.junedev.junetech_geo.worldgen.noise.EnhancedPerlinNoise;
+import com.mojang.logging.LogUtils;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.levelgen.synth.NormalNoise;
-import net.minecraft.world.level.levelgen.synth.PerlinNoise;
+import org.slf4j.Logger;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.Unique;
 
+// TODO - continue replacing calls to these
 /**
+ * Log whenever a deprecated method is used, as calls to these should have all been replaced
  * @author kawaiicakes
  */
 @Mixin(NormalNoise.class)
 public abstract class NormalNoiseMixin {
-    @WrapOperation(
-            method = "<init>",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;create(Lnet/minecraft/util/RandomSource;ILit/unimi/dsi/fastutil/doubles/DoubleList;)Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;"
-            )
-    )
-    private PerlinNoise handler(
-            RandomSource random, int firstOctave, DoubleList amplitudes, Operation<PerlinNoise> original,
-            @Local(argsOnly = true) LocalRef<NormalNoise.NoiseParameters> noiseParams
+    @Unique
+    private final static Logger jtGeO$LOGGER = LogUtils.getLogger();
+
+    @Unique
+    private static void jtGeO$logDeprecated(String signature) {
+        jtGeO$LOGGER.warn("Something has called deprecated NormalNoise#{}, jtGeO might not like this!", signature);
+    }
+
+    @WrapMethod(method = "createLegacyNetherBiome")
+    private static NormalNoise createLegacyNetherBiome(
+            RandomSource random, NormalNoise.NoiseParameters parameters, Operation<NormalNoise> original
     ) {
-        if (((ExpandedNoiseParameters) (Object) noiseParams.get()).jtGeO$isEnhanced()) {
-            return new EnhancedPerlinNoise(random, Pair.of(firstOctave, amplitudes), true);
-        }
+        jtGeO$logDeprecated("createLegacyNetherBiome");
+        return original.call(random, parameters);
+    }
+
+    @WrapMethod(method = "create(Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/synth/NormalNoise$NoiseParameters;)Lnet/minecraft/world/level/levelgen/synth/NormalNoise;")
+    private static NormalNoise create(
+            RandomSource random, NormalNoise.NoiseParameters parameters, Operation<NormalNoise> original
+    ) {
+        jtGeO$logDeprecated("create(Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/synth/NormalNoise$NoiseParameters;)Lnet/minecraft/world/level/levelgen/synth/NormalNoise;");
+        return original.call(random, parameters);
+    }
+
+    @WrapMethod(method = "create(Lnet/minecraft/util/RandomSource;I[D)Lnet/minecraft/world/level/levelgen/synth/NormalNoise;")
+    private static NormalNoise create(
+            RandomSource random, int firstOctave, double[] amplitudes, Operation<NormalNoise> original
+    ) {
+        jtGeO$logDeprecated("create(Lnet/minecraft/util/RandomSource;I[D)Lnet/minecraft/world/level/levelgen/synth/NormalNoise;");
         return original.call(random, firstOctave, amplitudes);
     }
 }

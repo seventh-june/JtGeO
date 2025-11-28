@@ -5,10 +5,11 @@
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "mixins": [
-    "NoiseParametersMixin",
-    "NoisesMixin",
+    "ChunkMapMixin",
     "NormalNoiseMixin",
-    "PerlinNoiseMixin"
+    "PerlinNoiseMixin",
+    "RandomStateMixin",
+    "RandomStateMixin$NoiseWiringHelperMixin"
   ],
   "client": [
     "client.CreativeModeInventoryScreenMixin"
