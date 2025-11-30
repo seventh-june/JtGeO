@@ -21,6 +21,7 @@ public class Shield extends Province {
         noise.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         noise.SetFractalOctaves(3);
         noise.SetSeed(seed);
+        noise.SetFrequency(1f/32f);
 
         return noise;
     }
@@ -29,9 +30,10 @@ public class Shield extends Province {
     public FastNoiseLite depthNoise(int iteration) {
         FastNoiseLite noise = new FastNoiseLite();
 
-        noise.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
+        noise.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2S);
         noise.SetFractalOctaves(3);
         noise.SetSeed(iteration);
+        noise.SetFrequency(1f/32f);
 
         return noise;
     }

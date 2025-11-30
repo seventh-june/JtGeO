@@ -17,6 +17,8 @@ import static net.junedev.junetech_geo.JunetechGeo.MOD_ID;
 public class JTGBiomeModifiers {
 
     public static final ResourceKey<BiomeModifier> STRATA = registerKey("add_strata_builder");
+    public static final ResourceKey<BiomeModifier> DYKE = registerKey("add_dyke_builder");
+    public static final ResourceKey<BiomeModifier> INTRUSION = registerKey("add_intrusion_builder");
 
     public static void initialize(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -26,7 +28,17 @@ public class JTGBiomeModifiers {
         context.register(STRATA, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(JTGPlacedFeatures.STRATA_PLACED)),
-                GenerationStep.Decoration.LOCAL_MODIFICATIONS));
+                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+
+        context.register(DYKE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(JTGPlacedFeatures.DYKE_PLACED)),
+                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+
+        context.register(INTRUSION, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(JTGPlacedFeatures.INTRUSION_PLACED)),
+                GenerationStep.Decoration.UNDERGROUND_DECORATION));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {

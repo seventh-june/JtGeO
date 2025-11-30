@@ -25,6 +25,7 @@ public class Orogen extends Province {
         noise.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         noise.SetFractalOctaves(3);
         noise.SetSeed(seed);
+        noise.SetFrequency(1f/128f);
 
         return noise;
     }
@@ -33,9 +34,11 @@ public class Orogen extends Province {
     public FastNoiseLite depthNoise(int iteration) {
         FastNoiseLite noise = new FastNoiseLite();
 
-        noise.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
+        noise.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
+        noise.SetCellularReturnType(FastNoiseLite.CellularReturnType.CellValue);
         noise.SetFractalOctaves(3);
         noise.SetSeed(iteration);
+        noise.SetFrequency(1f/16f);
 
         return noise;
     }

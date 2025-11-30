@@ -20,12 +20,16 @@ import static net.junedev.junetech_geo.JunetechGeo.MOD_ID;
 public class JTGPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> STRATA_PLACED = registerKey("strata_placed");
+    public static final ResourceKey<PlacedFeature> DYKE_PLACED = registerKey("dyke_placed");
+    public static final ResourceKey<PlacedFeature> INTRUSION_PLACED = registerKey("intrusion_placed");
 
     public static void initialize(BootstapContext<PlacedFeature> context) {
 
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, STRATA_PLACED, configuredFeatures.getOrThrow(JTGConfiguredFeatures.STRATA_CONFIGURED), JTGPlacements.justPlaceIt());
+        register(context, DYKE_PLACED, configuredFeatures.getOrThrow(JTGConfiguredFeatures.DYKE_CONFIGURED), JTGPlacements.justPlaceIt());
+        register(context, INTRUSION_PLACED, configuredFeatures.getOrThrow(JTGConfiguredFeatures.INTRUSION_CONFIGURED), JTGPlacements.justPlaceIt());
 
         JunetechGeo.LOGGER.info("Placed features initalized");
     }

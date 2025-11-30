@@ -19,6 +19,7 @@ public class Basin extends Province {
         noise.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         noise.SetFractalOctaves(3);
         noise.SetSeed(seed);
+        noise.SetFrequency(1f/128);
 
         return noise;
     }
@@ -30,6 +31,7 @@ public class Basin extends Province {
         noise.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
         noise.SetFractalOctaves(3);
         noise.SetSeed(iteration);
+        noise.SetFrequency(1f/64f);
 
         return noise;
     }

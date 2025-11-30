@@ -27,9 +27,7 @@ public class StrataBuilder extends Feature<NoneFeatureConfiguration> {
         this.cells.SetSeed(1);
         this.cells.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
         this.cells.SetCellularReturnType(FastNoiseLite.CellularReturnType.CellValue);
-        this.cells.SetDomainWarpType(FastNoiseLite.DomainWarpType.OpenSimplex2);
-        this.cells.SetDomainWarpAmp(32f);
-        this.cells.SetFrequency(1f/768f);
+        this.cells.SetFrequency(1f/384f);
         JunetechGeo.LOGGER.info("Hello from the strata builder");
     }
 
@@ -37,16 +35,15 @@ public class StrataBuilder extends Feature<NoneFeatureConfiguration> {
     public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> ctx) {
 
         BlockPos pos = ctx.origin();
-        WorldGenLevel level = ctx.level();
 
-        //JunetechGeo.LOGGER.info("Strata builder: " + pos.getX() + " / " + pos.getZ());
+        WorldGenLevel level = ctx.level();
 
         for (int i = 0; i < 16; i++) {
             for (int j = 0; j < 16; j++) {
 
                 int dx = pos.getX() + i;
                 int dz = pos.getZ() + j;
-                int height = ctx.level().getHeight(Heightmap.Types.WORLD_SURFACE_WG, dx, dz)-3;
+                int height = ctx.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, dx, dz)-2;
                 Province province = getProvince(dx, dz);
 
                 fillChunkWithStrata(ctx, level, dx, dz, height, province);
@@ -65,25 +62,27 @@ public class StrataBuilder extends Feature<NoneFeatureConfiguration> {
     //Fill the column
     private void fillChunkWithStrata(FeaturePlaceContext<NoneFeatureConfiguration> ctx, WorldGenLevel level, int dx, int dz, int height, Province province) {
 
-        int y = 0;
+        int y = -64;
         int seed = (int) ctx.level().getSeed();
         BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos(dx, 0, dz);
 
         while(y < height){
 
             StratumConfig config = getStratumConfig(seed, y, province);
+
             float depthMod = province.depthNoise(seed + y).getValue(dx, dz);
-            int depth = (int) (config.min() + (depthMod*config.getDelta()));
-            if (depth == 0){
-                depth = 1;
-            }
+            float depth = config.min() + (depthMod*config.getDelta());
+            if (depth < 1){depth = 1f;}//Avoid endless void iteration
 
             for (int i = 0; i < depth; i++) {
+
                 if (y > height){break;}
+
                 pos.setY(y);
                 if (!level.getBlockState(pos).isAir()) {
                     level.setBlock(pos, config.id().defaultBlockState(), 2);
                 }
+
                 y++;
             }
 
