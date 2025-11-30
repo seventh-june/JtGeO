@@ -2,7 +2,6 @@ package net.junedev.junetech_geo.datagen;
 
 import net.junedev.junetech_geo.JunetechGeo;
 import net.junedev.junetech_geo.datagen.provider.ModBlockStateProvider;
-import net.junedev.junetech_geo.datagen.provider.ModBlockTagGenerator;
 import net.junedev.junetech_geo.datagen.provider.ModItemModelProvider;
 //import net.junedev.junetech_geo.datagen.provider.ModLootTableProvider;
 import net.junedev.junetech_geo.datagen.provider.WorldGenProvider;

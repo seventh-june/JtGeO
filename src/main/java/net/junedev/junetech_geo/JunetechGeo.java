@@ -4,9 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.item.ModCreativeModeTabs;
 import net.junedev.junetech_geo.item.ModItems;
-import net.junedev.junetech_geo.worldgen.JTGConfiguredFeatures;
 import net.junedev.junetech_geo.worldgen.JTGFeatures;
-import net.junedev.junetech_geo.worldgen.chunk.JtGeOChunkStatus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -18,7 +16,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.*;
 import org.slf4j.Logger;
+
+import static net.junedev.junetech_geo.worldgen.serialization.NoiseAlgorithm.DIRECT_CODEC;
+import static net.junedev.junetech_geo.worldgen.serialization.NoiseAlgorithm.NOISE_ALGORITHM;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(JunetechGeo.MOD_ID)
@@ -27,6 +29,7 @@ public class JunetechGeo {
     //todo jtg or geo writes faster in-game as ID
     public static final String MOD_ID = "junetech_geo";
     public static final Logger LOGGER = LogUtils.getLogger();
+
     public static ResourceLocation id(String path) {
         return new ResourceLocation(MOD_ID, path);
     }
@@ -34,17 +37,22 @@ public class JunetechGeo {
     public JunetechGeo() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        modEventBus.addListener(JunetechGeo::onDatapackRegistryEvent);
+
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        //JtGeOChunkStatus.register(modEventBus);
-        //Features
         JTGFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+    }
+
+    @SubscribeEvent
+    public static void onDatapackRegistryEvent(DataPackRegistryEvent.NewRegistry event) {
+        event.dataPackRegistry(NOISE_ALGORITHM, DIRECT_CODEC, DIRECT_CODEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "junetech_geo:item/potassic_magnesio_fluoro_arfvedsonite_crystal"
+  }
+}

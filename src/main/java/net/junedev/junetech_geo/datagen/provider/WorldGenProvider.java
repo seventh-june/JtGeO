@@ -4,6 +4,7 @@ import net.junedev.junetech_geo.JunetechGeo;
 import net.junedev.junetech_geo.worldgen.JTGBiomeModifiers;
 import net.junedev.junetech_geo.worldgen.JTGConfiguredFeatures;
 import net.junedev.junetech_geo.worldgen.JTGPlacedFeatures;
+import net.junedev.junetech_geo.worldgen.serialization.NoiseAlgorithm;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -15,6 +16,7 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 import static net.junedev.junetech_geo.JunetechGeo.MOD_ID;
+import static net.junedev.junetech_geo.worldgen.serialization.NoiseAlgorithm.NOISE_ALGORITHM;
 
 public class WorldGenProvider extends DatapackBuiltinEntriesProvider {
 
@@ -22,6 +24,7 @@ public class WorldGenProvider extends DatapackBuiltinEntriesProvider {
             .add(Registries.CONFIGURED_FEATURE,         JTGConfiguredFeatures::initialize)
             .add(Registries.PLACED_FEATURE,             JTGPlacedFeatures::initialize)
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS,  JTGBiomeModifiers::initialize)
+            .add(NOISE_ALGORITHM,                       NoiseAlgorithm::bootstrap)
             ;
 
     public WorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

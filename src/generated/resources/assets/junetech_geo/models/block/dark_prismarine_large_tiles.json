@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "junetech_geo:block/dark_prismarine_large_tiles"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "junetech_geo:block/gypsum_satin_spar"
+  }
+}

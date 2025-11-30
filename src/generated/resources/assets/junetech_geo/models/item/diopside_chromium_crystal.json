@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "junetech_geo:item/diopside_chromium_crystal"
+  }
+}

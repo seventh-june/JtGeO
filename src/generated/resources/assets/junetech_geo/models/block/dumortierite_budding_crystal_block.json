@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "junetech_geo:block/dumortierite_budding_crystal_block"
+  }
+}
